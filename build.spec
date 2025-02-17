@@ -5,7 +5,7 @@ a = Analysis(
     pathex=[],
     binaries=[],
     datas=[
-        ('./Assets', 'Assets/')
+        ('./Assets', 'Assets/'),
     ],
     hiddenimports=[],
     hookspath=[],
@@ -37,5 +37,6 @@ exe = EXE(
     target_arch=None,
     codesign_identity=None,
     entitlements_file=None,
-    icon='Assets/UI/favicon.ico', 
+    icon='Assets/UI/favicon.ico',
+    uac_admin=True,
 )
